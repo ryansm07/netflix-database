@@ -1,3 +1,7 @@
+#criar ambiente virtual
+#separar arquivos de dados, scripts e virtual
+
+
 import pandas as pd #para manipulação dos dados
 import os #manipulação de diretorios operacionais
 import glob #ler todos os arquivos globalmente em massa
@@ -24,6 +28,7 @@ else:
             #pegar o nome do arquivo
             file_name = os.path.basename(excel_file)
 
+            #criação da nova coluna com o nome do arquivo
             df_temp['filename'] = file_name
 
             #criação da nova coluna location
